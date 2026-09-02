@@ -1,0 +1,7 @@
+services:
+  public-ip-exporter:
+    image: public-ip-exporter:latest
+    container_name: public-ip-exporter
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:9105:9105"
